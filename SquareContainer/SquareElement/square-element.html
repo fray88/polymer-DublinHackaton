@@ -6,35 +6,46 @@
         background-size:cover;
         height:200px;
         width:200px;
+        margin-right: 10px;
+        margin-bottom: 10px;
         float: left;
       }
       .box-info{
-        color:#006621;
-        background-color:#CDCDCD;
+        background-color:#fff;
         opacity:0.6;
         margin-left:5%;
         margin-right:5%;
         display:none;
+        padding: 4px;
+        overflow: hidden;
+      }
+      .box-info span {
+          color: #000;
+          font-size: 18px;
+      }
+      .box-info a {
+          color:#006621;
+          font-size: 10px;
       }
     </style>
     <content>
       <div class="box" horizontal layout end on-mouseover={{displayBoxInfo}} on-mouseout={{hideBoxInfo}} style='background:url("{{favorite.image}}");'>
-        <content class="box-info" id="boxInfo">
-          <span flex>{{favorite.name}}</span>
-          <a href="{{favorite.url}}">{{favorite.url}}</a>
-        </content>
+          <paper-shadow z="1" id="boxShadow"></paper-shadow>
+        <content class="box-info" id="boxInfo" flex>
+         <span flex>{{favorite.name}}</span>
+          <a href="{{favorite.url}}">{{favorite.url}}</a>        </content>
       </div>
-      
     </content>
-      
   </template>
   <script>
     Polymer({
       displayBoxInfo: function(){
         this.$.boxInfo.style.display = 'block';
+        this.$.boxShadow.z='2';
       },
       hideBoxInfo: function(){
         this.$.boxInfo.style.display = 'none';
+        this.$.boxShadow.z='1';
       }
     });
   </script>
