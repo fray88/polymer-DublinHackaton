@@ -4,7 +4,7 @@
     "name" : "Facebook",
     "image" : "/resources/images/Facebook.png",
     "url" : "https://www.facebook.com",
-    "size" : "1"
+    "size" : "2"
   },
   {
     "uid": 2,
@@ -39,14 +39,14 @@
     "name" : "Google+",
     "image" : "/resources/images/GooglePlus.png",
     "url" : "https://plus.google.com",
-    "size" : "1" 
+    "size" : "3" 
   },
   {
     "uid": 7,
     "name" : "BBC News",
     "image" : "/resources/images/BBC.png",
     "url" : "http://www.bbc.com/news/",
-    "size" : "1" 
+    "size" : "4" 
   },
   {
     "uid": 8,

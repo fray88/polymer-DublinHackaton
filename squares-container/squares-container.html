@@ -55,6 +55,13 @@
 				margin: 5px;
 				float: left;
 			}
+			.column-1 {
+				width: calc(100% / 5 * 2);
+			}
+			.column-2 {
+				width: calc(100% / 5);
+          		height: 100%;
+			}
 		</style>
 		<div class="squares-container" flex auto>
 			<core-ajax id="ajax" auto url="../api/favorites.json" on-core-response="{{favoritesLoaded}}" handleAs="json">
