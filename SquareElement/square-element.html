@@ -1,0 +1,45 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="import" href="bower_components/core-icon-button/core-icon-button.html">
+<link rel="import" href="bower_components/font-roboto/roboto.html">
+<link rel="import" href="bower_components/core-animation/core-animation.html">
+
+<polymer-element name="square-element">
+  <template>
+    <style>
+      .box{
+        background:url("http://img2.wikia.nocookie.net/__cb20130911023706/smosh/images/5/53/Facebookicon.png");
+        background-size:cover;
+        height:200px;
+        width:15%;
+      }
+      .box-info{
+        color:#006621;
+        background-color:#CDCDCD;
+        opacity:0.6;
+        margin-left:5%;
+        margin-right:5%;
+        display:none;
+      }
+    </style>
+    <content>
+      <div class="box" horizontal layout end on-mouseover={{displayBoxInfo}} on-mouseout={{hideBoxInfo}}>
+        <content class="box-info" id="boxInfo">
+          <span flex>Facebook</span>
+          <a href="http://www.facebook.com">http://www.facebook.com</a>
+        </content>
+      </div>
+      
+    </content>
+      
+  </template>
+  <script>
+    Polymer({
+      displayBoxInfo: function(){
+        this.$.boxInfo.style.display = 'block';
+      },
+      hideBoxInfo: function(){
+        this.$.boxInfo.style.display = 'none';
+      }
+    });
+  </script>
+</polymer-element>
