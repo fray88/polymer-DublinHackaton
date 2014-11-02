@@ -1,4 +1,4 @@
- [
+[
   {
     "uid": 1,
     "name" : "Facebook",
@@ -52,5 +52,5 @@
     "name" : "Facebook",
     "image" : "/resources/images/facebook.png",
     "size" : "1" 
-  },
+  }
 ]
