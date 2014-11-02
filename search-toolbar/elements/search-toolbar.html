@@ -1,0 +1,33 @@
+<polymer-element name="search-toolbar" noscript>
+  <template>
+    <style>
+      core-header-panel {
+            height: 100%;
+            /*overflow: auto;        
+            -webkit-overflow-scrolling: touch; */
+                      background: #e81d62;
+        }
+      core-toolbar {
+            background: #e81d62;
+            color: white;
+          }
+    </style>
+        <core-toolbar class="medium-tall" >
+          <span flex></span>
+          <paper-icon-button icon="more-vert"></paper-icon-button>
+          <paper-icon-button class="custom" src="../images/notifications.png" aria-label="notifications" style="opacity: 1;"></paper-icon-button>
+                  <content select="img"></content>
+          <span class="bottom indent">          
+            <paper-input label="Search phrase " 
+                       style="color: #ffffff; font-family: 'Roboto', sans-serif; font-size: 16px;">
+            </paper-input>
+          </span>
+        </core-toolbar>
+        <paper-shadow z="1"></paper-shadow>
+
+        <!-- <script>
+            Polymer({}); 
+        </script>
+      -->
+  </template>
+</polymer-element>
