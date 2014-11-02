@@ -11,8 +11,23 @@
 
 <polymer-element name="hackaton-app">
   <template>
-    <search-toolbar></search-toolbar>
-    <squares-container></squares-container>
+    <style>
+      .main {
+          margin-left: 20px;
+          margin-right: 20px;
+          margin-bottom: 20px;
+          padding-top: 148px;
+      }
+      search-toolbar {
+          position: fixed;
+          width: 100%;
+          z-index: 3;
+      }
+    </style>
+    <search-toolbar z=3></search-toolbar>
+    <div class="main">
+      <squares-container></squares-container>
+    </div>
   </template>
   <script>
     Polymer({
