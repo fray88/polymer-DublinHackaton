@@ -1,11 +1,12 @@
-<polymer-element name="square-element">
+<polymer-element name="square-element" attributes="favorite">
   <template>
     <style>
       .box{
         background:url("http://img2.wikia.nocookie.net/__cb20130911023706/smosh/images/5/53/Facebookicon.png");
         background-size:cover;
         height:200px;
-        width:15%;
+        width:200px;
+        float: left;
       }
       .box-info{
         color:#006621;
@@ -17,10 +18,10 @@
       }
     </style>
     <content>
-      <div class="box" horizontal layout end on-mouseover={{displayBoxInfo}} on-mouseout={{hideBoxInfo}}>
+      <div class="box" horizontal layout end on-mouseover={{displayBoxInfo}} on-mouseout={{hideBoxInfo}} style='background:url("{{favorite.image}}");'>
         <content class="box-info" id="boxInfo">
-          <span flex>Facebook</span>
-          <a href="http://www.facebook.com">http://www.facebook.com</a>
+          <span flex>{{favorite.name}}</span>
+          <a href="{{favorite.url}}">{{favorite.url}}</a>
         </content>
       </div>
       
