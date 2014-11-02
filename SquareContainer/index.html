@@ -1,1 +1,27 @@
-index.html
+<title>SquareContainer</title>
+<link rel="import" href="./bower_components/platform/platform.js">
+<link rel="import" href="./bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/core-ajax/core-ajax.html">
+
+<polymer-element name="square-container" noscript>
+  <template>
+    <span>Hello from <b>my-element</b>. This is my Shadow DOM.</span>    
+    <core-ajax url="http://example.com/json" auto response="{{resp}}"></core-ajax>
+    <textarea value="{{resp}}"></textarea>
+  </template>
+</polymer-element>
+
+<polymer-element name="hackaton-app">
+  <template>
+    <style>
+    </style>
+    <square-container></square-container>
+  </template>
+   <script>
+    Polymer({
+      
+    });
+  </script>
+</polymer-element>
+
+<hackaton-app></hackaton-app>
