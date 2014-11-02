@@ -3,7 +3,7 @@
     <style>
       .box{
         background:url("http://img2.wikia.nocookie.net/__cb20130911023706/smosh/images/5/53/Facebookicon.png");
-        background-size:cover;
+        background-size: cover !important;
         height:200px;
         width:200px;
         margin-right: 10px;
@@ -12,16 +12,16 @@
       }
       .box-info{
         background-color:#fff;
-        opacity:0.6;
-        margin-left:5%;
-        margin-right:5%;
-        display:none;
+        opacity:0.8;
+        display: none;
         padding: 4px;
         overflow: hidden;
+        text-align: center;
       }
       .box-info span {
           color: #000;
           font-size: 18px;
+          display: block;
       }
       .box-info a {
           color:#006621;
@@ -29,10 +29,14 @@
       }
     </style>
     <content>
-      <div class="box" horizontal layout end on-mouseover={{displayBoxInfo}} on-mouseout={{hideBoxInfo}} style='background:url("{{favorite.image}}");'>
+      <div class="box" horizontal layout end 
+           on-mouseover={{displayBoxInfo}} 
+           on-mouseout={{hideBoxInfo}}
+           onclick="window.open('{{favorite.url}}')"
+           style='background:url("{{favorite.image}}");'>
           <paper-shadow z="1" id="boxShadow"></paper-shadow>
         <content class="box-info" id="boxInfo" flex>
-         <span flex>{{favorite.name}}</span>
+         <span>{{favorite.name}}</span>
           <a href="{{favorite.url}}">{{favorite.url}}</a>        </content>
       </div>
     </content>
