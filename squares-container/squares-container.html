@@ -1,11 +1,10 @@
-<title>SquareContainer</title>
 <link rel="import" href="../bower_components/platform/platform.js">
 <link rel="import" href="../bower_components/polymer/polymer.html">
 <link rel="import" href="../bower_components/core-ajax/core-ajax.html">
+<link rel="import" href="../bower_components/paper-button/paper-button.html">
 <link rel="import" href="../bower_components/core-animated-pages/core-animated-pages.html">
 <link rel="import" href="../bower_components/core-animated-pages/transitions/tile-cascade.html">
 <link rel="import" href="../bower_components/font-roboto/roboto.html">
-<link rel="import" href="../bower_components/paper-shadow/paper-shadow.html">
 
 <link rel="import" href="../square-element/square-element.html">
 
@@ -66,7 +65,6 @@
 			},
 			favoritesLoaded: function () {
 				this.favorites = this.$.ajax.response.slice(0);
-				console.log(this.favorites);
 			}
 		});
 	</script>
