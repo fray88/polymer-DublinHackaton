@@ -14,7 +14,11 @@
         float: left;
         vertical-align: top;
       }
-
+      
+      .box:hover {
+          z-index: 2;
+      }
+        
       @media (max-width: 699px) {
         .box-size-1 {
           width: calc(100% / 2);
@@ -88,7 +92,8 @@
       }
     </style>
     <content>
-      <div class="box front box-size-{{favorite.size}}" horizontal layout end 
+      <div class="box front box-size-{{favorite.size}}" 
+           horizontal layout end 
            on-mouseover={{displayBoxInfo}} 
            on-mouseout={{hideBoxInfo}}
            onclick="window.open('{{favorite.url}}')"
