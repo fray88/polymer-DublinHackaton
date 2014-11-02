@@ -89,7 +89,7 @@
            on-mouseout={{hideBoxInfo}}
            onclick="window.open('{{favorite.url}}')"
            style='background-image:url("{{favorite.image}}");'>
-          <paper-shadow z="1" id="boxShadow"></paper-shadow>
+          <paper-shadow z="0" id="boxShadow"></paper-shadow>
         <content class="box-info" id="boxInfo" flex self-stretch>
          <span>{{favorite.name}}</span>
           <a href="{{favorite.url}}">{{favorite.url}}</a>        </content>
@@ -104,7 +104,7 @@
       },
       hideBoxInfo: function(){
         this.$.boxInfo.style.display = 'none';
-        this.$.boxShadow.z='1';
+        this.$.boxShadow.z='0';
       }
     });
   </script>
