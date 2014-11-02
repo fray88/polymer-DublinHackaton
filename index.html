@@ -1,27 +1,25 @@
-<!doctype html>
+<title>Awesome Polymer</title>
 
-<html>
-<head>
-  <title>Awesome Polymer</title>
+<script src="./bower_components/platform/platform.js"></script>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="import" href="./bower_components/core-toolbar/core-toolbar.html">
+<link rel="import" href="./bower_components/font-roboto/roboto.html">
+<link rel="import" href="./squares-container/squares-container.html">
+<link rel="import" href="./square-element/square-element.html">
+<link rel="import" href="./search-toolbar/search-toolbar.html">
+<link rel="stylesheet" href="./style.css">
 
-  <script src="./bower_components/platform/platform.js"></script>
+<polymer-element name="hackaton-app">
+	<template>
+    <search-toolbar></search-toolbar>
+		<squares-container></squares-container>
+	</template>
+	<script>
+		Polymer({
 
-  <link rel="import" href="./bower_components/core-toolbar/core-toolbar.html">
-  <link rel="import" href="./bower_components/font-roboto/roboto.html">
-  <link rel="import" href="./squares-container/squares-container.html">
-  <link rel="import" href="./square-element/square-element.html">
-  <link rel="stylesheet" href="./style.css">
+		});
+	</script>
+</polymer-element>
 
-</head>
+<hackaton-app></hackaton-app>
 
-<body unresolved>
-  <core-toolbar>
-    <span flex>toolbar</span>
-  </core-toolbar>
-  <squares-container></squares-container>
-</body>
-</html>
