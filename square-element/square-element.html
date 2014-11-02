@@ -88,16 +88,24 @@
       }
     </style>
     <content>
-        <div class="box front box-size-{{favorite.size}}" horizontal layout end 
+        <div class="box front box-size-{{favorite.size}}" horizontal layout end
+              on-mouseover={{displayBoxInfo}} 
+              on-mouseout={{hideBoxInfo}} 
              onclick=" setTimeout(function(){window.open('{{favorite.url}}', '_self')}, 100)"
              style='background-image:url("{{favorite.image}}");'>
              <paper-button class='favorite-button'></paper-button>
+             <paper-shadow z="1" id="boxShadow"></paper-shadow>
         </div>
     </content>
   </template>
   <script>
     Polymer({
-      
+      displayBoxInfo: function(){
+        this.$.boxShadow.z='2';
+      },
+      hideBoxInfo: function(){
+        this.$.boxShadow.z='1';
+      }
     });
   </script>
 </polymer-element>
