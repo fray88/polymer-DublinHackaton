@@ -2,6 +2,8 @@
 <link rel="import" href="./bower_components/platform/platform.js">
 <link rel="import" href="./bower_components/polymer/polymer.html">
 <link rel="import" href="./bower_components/core-ajax/core-ajax.html">
+<link rel="import" href="../core-animated-pages/core-animated-pages.html">
+<link rel="import" href="../core-animated-pages/transitions/tile-cascade.html">
 
 <polymer-element name="squares-container" attributes="favorites" tile-cascade>
 	<template>
@@ -38,11 +40,14 @@
 				float: left;
 			}
 		</style>
+
 		<div class="squares-container" flex auto>
 			<core-ajax id="ajax" auto url="../api/favorites.json" on-core-response="{{favoritesLoaded}}" handleAs="json">
 			</core-ajax>
 			<template repeat="{{fav, i in favorites}}">
-				<div class="test-square"></div>
+				<core-animated-pages transitions="tile-cascade">
+					<div class="test-square"></div>
+				</core-animated-pages>
 			</template>
 		</div>
 
