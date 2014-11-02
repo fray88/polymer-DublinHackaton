@@ -19,15 +19,22 @@
             background: #e81d62;
             color: white;
           }
+        paper-input {
+            padding: 0px 20px;
+            color: #fff;
+            font-family: 'Roboto', sans-serif; font-size: 16px;
+        }
+        paper-input input {
+            color: #fff !important;
+        }
     </style>
-        <core-toolbar class="medium-tall" >
+        <core-toolbar class="medium" >
           <span flex></span>
           <paper-icon-button icon="more-vert"></paper-icon-button>
           <paper-icon-button class="custom" src="../images/notifications.png" aria-label="notifications" style="opacity: 1;"></paper-icon-button>
                   <content select="img"></content>
           <span class="bottom indent">          
-            <paper-input label="Search phrase " 
-                       style="color: #ffffff; font-family: 'Roboto', sans-serif; font-size: 16px;">
+            <paper-input floatingLabel label="Search">
             </paper-input>
           </span>
         </core-toolbar>
