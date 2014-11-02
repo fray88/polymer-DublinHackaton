@@ -3,54 +3,63 @@
     "uid": 1,
     "name" : "Facebook",
     "image" : "/resources/images/Facebook.png",
-    "size" : "2" 
+    "url" : "https://www.facebook.com",
+    "size" : "2"
   },
   {
     "uid": 2,
     "name" : "Twitter",
     "image" : "/resources/images/Twitter.png",
+    "url" : "https://www.twitter.com",
     "size" : "1" 
   },
   {
     "uid": 3,
-    "name" : "Facebook",
-    "image" : "/resources/images/.png",
+    "name" : "Dublin Bus",
+    "image" : "/resources/images/DublinBus.png",
+    "url" : "http://www.dublinbus.ie/",
     "size" : "1" 
   },
   {
     "uid": 4,
-    "name" : "Facebook",
-    "image" : "/resources/images/facebook.png",
+    "name" : "Yahoo Weather",
+    "image" : "/resources/images/YahooWeather.png",
+    "url" : "https://weather.yahoo.com/ireland/dublin/dublin-560743/",
     "size" : "1" 
   },
   {
     "uid": 5,
-    "name" : "Facebook",
-    "image" : "/resources/images/facebook.png",
+    "name" : "Kickstarter",
+    "image" : "/resources/images/Kickstarter.png",
+    "url" : "https://www.kickstarter.com/",
     "size" : "1" 
   },
   {
     "uid": 6,
     "name" : "Google+",
     "image" : "/resources/images/GooglePlus.png",
+    "url" : "https://plus.google.com",
     "size" : "2" 
   },
   {
     "uid": 7,
-    "name" : "Facebook",
-    "image" : "/resources/images/facebook.png",
+    "name" : "BBC News",
+    "image" : "/resources/images/BBC.png",
+    "url" : "http://www.bbc.com/news/",
     "size" : "1" 
   },
   {
     "uid": 8,
-    "name" : "Facebook",
-    "image" : "/resources/images/facebook.png",
+    "name" : "GialloZafferano",
+    "image" : "/resources/images/GialloZafferano.png",
+    "url" : "http://www.giallozafferano.it/",
     "size" : "1" 
   },
   {
     "uid": 9,
-    "name" : "Facebook",
-    "image" : "/resources/images/facebook.png",
+    "name" : "Amazon",
+    "image" : "/resources/images/Amazon.png",
+    "url" : "https://www.amazon.co.uk/",
     "size" : "1" 
   }
 ]
