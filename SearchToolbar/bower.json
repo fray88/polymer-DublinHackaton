@@ -1,0 +1,16 @@
+{
+  "name": "SearchToolbar",
+  "version": "0.0.1",
+  "homepage": "https://github.com/fray88/polymer-DublinHackaton",
+  "authors": [
+    "Peter <piotrekkmt@gmail.com>"
+  ],
+  "description": "Toolbar Header",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "core-elements": "Polymer/core-elements#~0.4.2",
+    "polymer": "Polymer/polymer#~0.4.2",
+    "paper-elements": "Polymer/paper-elements#~0.4.2"
+  }
+}
