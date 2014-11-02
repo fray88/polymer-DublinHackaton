@@ -2,14 +2,38 @@
   <template>
     <style>
       .box{
-        background:url("http://img2.wikia.nocookie.net/__cb20130911023706/smosh/images/5/53/Facebookicon.png");
         background-size:cover;
-        height:200px;
-        width:200px;
-        margin-right: 10px;
-        margin-bottom: 10px;
+        /*margin-right: 10px;
+        margin-bottom: 10px;*/
         float: left;
+        vertical-align: top;
       }
+
+
+      @media (max-width: 699px) {
+        .box-size-1 {
+          width: calc(100% / 2);
+          height: calc(100% / 2 * 2);
+        }
+
+        .box-size-2 {
+          width: calc(100% / 2);
+          height: calc(100% / 2 * 2);
+        }
+      }
+
+      @media (min-width: 700px) {
+        .box-size-1 {
+          width: calc(100% / 5);
+          height: calc(100% / 3);
+        }
+
+        .box-size-2 {
+          width: calc(100% / 5 * 2);
+          height: calc(100% / 3 * 2);
+        }
+      }
+      
       .box-info{
         background-color:#fff;
         opacity:0.6;
@@ -29,7 +53,7 @@
       }
     </style>
     <content>
-      <div class="box" horizontal layout end on-mouseover={{displayBoxInfo}} on-mouseout={{hideBoxInfo}} style='background:url("{{favorite.image}}");'>
+      <div class="box box-size-{{favorite.size}}" horizontal layout end on-mouseover={{displayBoxInfo}} on-mouseout={{hideBoxInfo}} style='background:url("{{favorite.image}}");'>
           <paper-shadow z="1" id="boxShadow"></paper-shadow>
         <content class="box-info" id="boxInfo" flex>
          <span flex>{{favorite.name}}</span>

@@ -4,7 +4,7 @@
     "name" : "Facebook",
     "image" : "/resources/images/Facebook.png",
     "url" : "https://www.facebook.com",
-    "size" : "2"
+    "size" : "1"
   },
   {
     "uid": 2,
@@ -39,7 +39,7 @@
     "name" : "Google+",
     "image" : "/resources/images/GooglePlus.png",
     "url" : "https://plus.google.com",
-    "size" : "2" 
+    "size" : "1" 
   },
   {
     "uid": 7,
