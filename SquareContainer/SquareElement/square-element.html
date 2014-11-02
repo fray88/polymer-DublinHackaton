@@ -17,6 +17,9 @@
         padding: 4px;
         overflow: hidden;
         text-align: center;
+        padding-top: 40%;
+        padding-left: 4px;
+        padding-right: 4px;
       }
       .box-info span {
           color: #000;
@@ -35,7 +38,7 @@
            onclick="window.open('{{favorite.url}}')"
            style='background:url("{{favorite.image}}");'>
           <paper-shadow z="1" id="boxShadow"></paper-shadow>
-        <content class="box-info" id="boxInfo" flex>
+        <content class="box-info" id="boxInfo" flex self-stretch>
          <span>{{favorite.name}}</span>
           <a href="{{favorite.url}}">{{favorite.url}}</a>        </content>
       </div>
